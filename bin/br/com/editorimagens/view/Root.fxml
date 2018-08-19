@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.editorimagens.controller.ImageController">
+   <children>
+      <ImageView fx:id="imgFoto" fitHeight="316.0" fitWidth="319.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnCarregarImagem" layoutX="231.0" layoutY="340.0" mnemonicParsing="false" onAction="#carregarImagem" text="Carregar Imagem" />
+      <Button fx:id="btnProximo" disable="true" layoutX="103.0" layoutY="340.0" mnemonicParsing="false" onAction="#carregarProximo" text="Próximo" />
+      <Button fx:id="btnAnterior" disable="true" layoutX="29.0" layoutY="340.0" mnemonicParsing="false" onAction="#carregarAnterior" text="Anterior" />
+      <Label layoutX="401.0" layoutY="28.0" text="Contraste" />
+      <Slider fx:id="sldContraste" layoutX="357.0" layoutY="52.0" />
+      <Slider fx:id="sldBrilho" layoutX="357.0" layoutY="101.0" />
+      <Label layoutX="401.0" layoutY="78.0" text="Brilho" />
+      <Slider fx:id="sldSaturacao" layoutX="357.0" layoutY="158.0" />
+      <Label layoutX="401.0" layoutY="134.0" text="Saturação" />
+      <Slider fx:id="sldTonalidade" layoutX="357.0" layoutY="205.0" />
+      <Label layoutX="401.0" layoutY="181.0" text="Tonalidade" />
+      <Button fx:id="btnDefault" layoutX="357.0" layoutY="247.0" mnemonicParsing="false" onAction="#restaurarPadrao" text="Default" />
+      <Button fx:id="btnSalvar" layoutX="357.0" layoutY="284.0" mnemonicParsing="false" onAction="#salvarImagem" text="Salvar"
+      />
+   </children>
+</AnchorPane>
